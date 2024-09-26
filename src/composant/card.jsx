@@ -12,7 +12,9 @@ const Card = () => {
             <Catego /> 
             <div className='row mt-3'>
                 <div className=' col-lg-3 border border-warning border-4 bg-success text-white'>
-                    <p className='text-end'>Fermer</p>
+                    <div className='text-end'>
+                    <button type='button' className='btn text-white '>Fermer</button>
+                    </div>
                     <div className='m-3'>
                         <h2>Panier</h2>
                         <ul>
@@ -25,7 +27,7 @@ const Card = () => {
                 </div>
                 
                 {/* card1 */}
-                <div className=' col-lg-3 card'>
+                <div className=' col-lg-3 card mt-3'>
                     <img src={card1} className="card-img-top " alt="card"/>
                         <div className='card-body'>
                             <h5 className='card-title'>Plante 1</h5>
@@ -34,7 +36,7 @@ const Card = () => {
                         </div>
                 </div>
                 {/* card2 */}
-                <div className=' col-lg-3 card'>
+                <div className=' col-lg-3 card mt-3'>
                     <img src={card2} className="card-img-top " alt="card"/>
                         <div className='card-body'>
                             <h5 className='card-title'>Plante 2</h5>
@@ -43,7 +45,7 @@ const Card = () => {
                         </div>
                 </div>
                 {/* card3 */}
-                <div className=' col-lg-3 card'>
+                <div className=' col-lg-3 card mt-3'>
                     <img src={card3} className="card-img-top " alt="card"/>
                         <div className='card-body'>
                             <h5 className='card-title'>Plante 3</h5>
