@@ -3,7 +3,7 @@ import '../App.css';
 import card1 from '../assets/monstera.jpg'
 import card2 from '../assets/img2.jpg'
 import card3 from '../assets/img3.jpg'
-
+import Shoppinglist from './shoppingList';
 import Catego from './categories';
 
 const Card = () => {
@@ -30,8 +30,8 @@ const Card = () => {
                 <div className=' col-lg-3 card mt-3'>
                     <img src={card1} className="card-img-top " alt="card"/>
                         <div className='card-body'>
-                            <h5 className='card-title'>Plante 1</h5>
-                            <p className='card-text'></p>
+                            <h5 className='card-title'>Plante 1</h5> 
+                            <Shoppinglist />
                             <button >Ajouter</button>
                         </div>
                 </div>
@@ -40,7 +40,7 @@ const Card = () => {
                     <img src={card2} className="card-img-top " alt="card"/>
                         <div className='card-body'>
                             <h5 className='card-title'>Plante 2</h5>
-                            <p className='card-text'></p>
+                            <Shoppinglist />
                             <button >Ajouter</button>
                         </div>
                 </div>
@@ -49,7 +49,7 @@ const Card = () => {
                     <img src={card3} className="card-img-top " alt="card"/>
                         <div className='card-body'>
                             <h5 className='card-title'>Plante 3</h5>
-                            <p className='card-text'></p>
+                            <Shoppinglist />
                             <button >Ajouter</button>
                         </div>
                 </div>
