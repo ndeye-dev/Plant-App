@@ -3,7 +3,7 @@ import '../App.css';
 import Eau from '../assets/eau.jfif'
 import Soleil from '../assets/soleil.jfif'
 
-const Shoppinglist = () => {
+const Care = () => {
     return(
         <div>
             <img src={Eau} alt="" className='img-eau'/>
@@ -17,4 +17,4 @@ const Shoppinglist = () => {
         </div>
     )
 }
-export default Shoppinglist;
+export default Care;
