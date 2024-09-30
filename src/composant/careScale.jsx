@@ -1,20 +1,26 @@
+
+
 import React from "react";
 import '../App.css';
-import Eau from '../assets/eau.jfif'
-import Soleil from '../assets/soleil.jfif'
+import Eau from '../assets/eau.jfif';
+import Soleil from '../assets/soleil.jfif';
 
-const Care = () => {
-    return(
+const Care = ({ image1, image2 }) => {
+
+    const eau = Array.from({ length: image1 }, (_, index) => (
+        <img key={index} src={Eau} alt="" className='img-eau' />
+    ));
+    
+    const soleil = Array.from({ length: image2 }, (_, index) => (
+        <img key={index} src={Soleil} alt="" className='img-eau' />
+    ));
+
+    return (
         <div>
-            <img src={Eau} alt="" className='img-eau'/>
-            <img src={Eau} alt="" className='img-eau'/>
-            <br />
-            <img src={Soleil} alt="" className='img-eau'/>
-            <img src={Soleil} alt="" className='img-eau'/>
-            <img src={Soleil} alt="" className='img-eau'/>
-
-
+            {eau}
+            {soleil}
         </div>
-    )
-}
+    );
+};
+
 export default Care;
